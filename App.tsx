@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
+import { SvgXml } from "react-native-svg";
+import Icon from "./src/assets/Icon";
+
+
 
 const App = () => {
 
@@ -15,6 +19,7 @@ const App = () => {
 
   return (
     <View style={style.container}>
+      <SvgXml xml={Icon} height={"25%"} width={"50%"} />
       <Text style={style.text}>{number}</Text>
       <View style={style.buttonmenu}>
       <TouchableOpacity style={style.button} onPress={Aumenta}>
