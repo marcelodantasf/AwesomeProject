@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import { SvgXml } from "react-native-svg";
-import Icon from "./src/assets/Icon";
+import Icon from "./src/assets/2640303-removebg-preview 1.svg";
+import iconsm from "./src/assets/iconsm.svg";
 
 
 
@@ -19,7 +20,7 @@ const App = () => {
 
   return (
     <View style={style.container}>
-      <SvgXml xml={Icon} height={"25%"} width={"50%"} />
+      <Icon height={50} />
       <Text style={style.text}>{number}</Text>
       <View style={style.buttonmenu}>
       <TouchableOpacity style={style.button} onPress={Aumenta}>
